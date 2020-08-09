@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "C/C++: g++.exe build active file",
+      "command": "C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\bin\\g++.exe",
+      "args": [
+        "${file}",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe",
+        "-std=c++11",
+        "-pthread",
+        "-I",
+        "C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\include",
+        "-I",
+        "C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\x86_64-w64-mingw32\\include",
+        "-I",
+        "C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\libgcc\\x86_64-w64-mingw32\\4.9.2\\include",
+        "-I",
+        "C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\lib\\gcc\\x86_64-w64-mingw32\\4.9.2\\include\\c++",
+        "-L",
+        "C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\lib",
+        "-L",
+        "C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\x86_64-w64-mingw32\\lib",
+        "-static-libgcc"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
